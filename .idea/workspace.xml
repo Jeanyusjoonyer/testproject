@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d9fe89c-e60c-4570-b4c1-661a4da70374" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/covertedFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/covertedFile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Coverter/Converter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Coverter/Converter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Converter.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,14 +20,32 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Converter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+            <state relative-caret-position="134">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1476#1484#0" expanded="true" />
-                <element signature="method#coverter#0;class#Converter#0" />
+                <element signature="method#getTrumpTweetsOntoReadableState#0;class#Converter#0" />
+                <element signature="e#2043#2197#0" />
                 <element signature="method#try01#0;class#Converter#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trumpJson.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/splitIntoTinyPieces.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -39,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/covertedFile.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="266748" lean-forward="true" selection-start-column="266748" selection-end-column="266748" />
+              <caret column="1" selection-start-column="1" selection-end-line="401" />
             </state>
           </provider>
         </entry>
@@ -73,7 +88,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="305" />
     <option name="y" value="135" />
     <option name="width" value="1385" />
@@ -85,7 +100,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -102,6 +116,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,11 +172,12 @@
       <workItem from="1570736101948" duration="1209000" />
       <workItem from="1570738466372" duration="2777000" />
       <workItem from="1570807403468" duration="1134000" />
+      <workItem from="1570809576531" duration="2657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5120000" />
+    <option name="totallyTimeSpent" value="7777000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -176,7 +192,7 @@
     <frame x="66" y="-9" width="1863" height="1098" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25741467" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26133183" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -185,16 +201,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49804142" visible="true" weight="0.32368702" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49804142" visible="true" weight="0.32690248" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49916062" weight="0.39978564" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49972022" weight="0.3290461" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49860102" weight="0.3290461" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49916062" weight="0.3290461" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49860102" weight="0.3290461" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5019586" side_tool="true" visible="true" weight="0.32368702" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49636263" weight="0.3290461" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5036374" side_tool="true" weight="0.3290461" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -221,18 +237,32 @@
     <entry file="file://$PROJECT_DIR$/covertedFile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="266748" lean-forward="true" selection-start-column="266748" selection-end-column="266748" />
+          <caret column="1" selection-start-column="1" selection-end-line="401" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trumpJson.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/splitIntoTinyPieces.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Converter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+        <state relative-caret-position="134">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1476#1484#0" expanded="true" />
-            <element signature="method#coverter#0;class#Converter#0" />
+            <element signature="method#getTrumpTweetsOntoReadableState#0;class#Converter#0" />
+            <element signature="e#2043#2197#0" />
             <element signature="method#try01#0;class#Converter#0" />
           </folding>
         </state>

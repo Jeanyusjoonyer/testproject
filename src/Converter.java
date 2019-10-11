@@ -6,7 +6,7 @@ import java.util.jar.Attributes;
 
 public class Converter {
 
-    public static File crimeData, convertedFile, myTextFile;
+    public static File crimeData, convertedFile, myTextFile, trumptweets, trumptweetsJson, splitIntoTinyPieces;
 
     public static void main(String[] args) {
 
@@ -14,43 +14,77 @@ public class Converter {
         crimeData = new File("crimeData.txt");
         convertedFile = new File("covertedFile.txt");
         myTextFile = new File("myTextFile.txt");
+        trumptweets = new File("trumptweets.txt");
+        trumptweetsJson = new File ("trumpJson.txt");
+        splitIntoTinyPieces = new File ("splitIntoTinyPieces.txt");
 
-        if(!myTextFile.exists()) {
+        if(!myTextFile.exists() || !convertedFile.exists() || !trumptweetsJson.exists()||!splitIntoTinyPieces.exists()) {
             try {
+                splitIntoTinyPieces.exists();
                 convertedFile.createNewFile();
                 myTextFile.createNewFile();
+                trumptweetsJson.createNewFile();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-        try02();
+
+
     }
 
-    public static void try02(){
-        try (FileReader myFileReader = new FileReader(crimeData); BufferedReader myLineReader = new BufferedReader(myFileReader)){
+    public static void try04(){
 
-            String line;
-            int attributes = 0;
-            String [] tagName;
-            String [] TagValue;
+        try (FileWriter fw = new FileWriter(splitIntoTinyPieces, false)){
+            fw.write("");
+        } catch (IOException e){
+            e.printStackTrace();
+        }
 
-            //Set Mark to Recognize the Beginning of the Document
-            myLineReader.mark(1);
-            // Find out which attributes the File has and put them into a variable
-            for (String substring : myLineReader.readLine().split(",")) {
-                attributes++;
-                System.out.println(attributes);
+        try (FileReader myFileReader = new FileReader(trumptweetsJson); BufferedReader myLineReader = new BufferedReader(myFileReader)){
+
+            String cache = "";
+
+
+            while ((cache = myLineReader.readLine()) != null) {
+
+                String[] line = cache.split("\",");
+
+                for (int i = 0; i < line.length; i++) {
+                    //System.out.println(line[i] + "\n");
+
+                    try (FileWriter myFileWriter = new FileWriter(splitIntoTinyPieces, true)) {
+                        if(line[i].contains(",{")){
+                            myFileWriter.write("\n");
+                        }
+                        myFileWriter.write(line[i] + "\n");
+
+
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
             }
-            // Go to the beginning of the document
-            myLineReader.reset();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
-            ArrayList<String> list = new ArrayList<String>();
-            line = myLineReader.readLine();
+    public static void getTrumpTweetsOntoReadableState(){
+        try (FileReader myFileReader = new FileReader(trumptweets); BufferedReader myLineReader = new BufferedReader(myFileReader)){
 
-            System.out.println(line);
+          String [] line = myLineReader.readLine().split("}");
 
-            try (FileWriter myFileWriter = new FileWriter(convertedFile,false)){
-                myFileWriter.write(line);
+            for(int i = 0; i < line.length; i++) {
+                System.out.println(line[i] + "\n");
+
+                try(FileWriter myFileWriter = new FileWriter(trumptweetsJson, true)){
+                    myFileWriter.write(line[i] + "\n");
+                }catch (IOException e){
+                    e.printStackTrace();
+                }
+
             }
 
         } catch (FileNotFoundException e) {
@@ -59,6 +93,7 @@ public class Converter {
             e.printStackTrace();
         }
     }
+
 
 
     public static void coverter (File input){
