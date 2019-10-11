@@ -1,15 +1,1 @@
-report_year
-agency_code
-agency_jurisdiction
-population
-violent_crimes
-homicides
-rapes
-assaults
-robberies
-months_reported
-crimes_percapita
-homicides_percapita
-rapes_percapita
-assaults_percapita
-robberies_percapita
+report_year,agency_code,agency_jurisdiction,population,violent_crimes,homicides,rapes,assaults,robberies,months_reported,crimes_percapita,homicides_percapita,rapes_percapita,assaults_percapita,robberies_percapita
